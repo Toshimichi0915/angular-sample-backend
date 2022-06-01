@@ -1,0 +1,34 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.21'
+    id 'org.jetbrains.kotlin.plugin.serialization' version "1.6.21"
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation platform('org.jetbrains.kotlin:kotlin-bom')
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+
+    implementation 'io.ktor:ktor-server-core:2.0.2'
+    implementation 'io.ktor:ktor-server-netty:2.0.2'
+    implementation 'io.ktor:ktor-server-content-negotiation:2.0.2'
+    implementation 'io.ktor:ktor-serialization-kotlinx-json:2.0.2'
+
+    implementation 'io.insert-koin:koin-ktor:3.2.0'
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
+
+    implementation 'org.jetbrains.exposed:exposed-core:0.38.2'
+    runtimeOnly 'org.jetbrains.exposed:exposed-jdbc:0.38.2'
+
+    runtimeOnly 'com.h2database:h2:2.1.212'
+
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    testImplementation 'org.jetbrains.kotlin:kotlin-test-junit'
+}
+
+application {
+    mainClass = 'net.toshimichi.angular.ApplicationKt'
+}
