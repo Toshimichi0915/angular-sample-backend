@@ -1,4 +1,4 @@
-package net.toshimichi.angular.model
+package net.toshimichi.angular
 
 import org.jetbrains.exposed.sql.Table
 

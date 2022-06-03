@@ -1,9 +1,7 @@
-package net.toshimichi.angular.service
+package net.toshimichi.angular
 
-import net.toshimichi.angular.data.Customer
-import net.toshimichi.angular.model.Customers
-import net.toshimichi.angular.model.Customers.email
-import net.toshimichi.angular.model.Customers.username
+import net.toshimichi.angular.Customers.email
+import net.toshimichi.angular.Customers.username
 import org.jetbrains.exposed.sql.Query
 import org.jetbrains.exposed.sql.insert
 import org.jetbrains.exposed.sql.select

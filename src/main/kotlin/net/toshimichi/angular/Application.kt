@@ -8,9 +8,6 @@ import io.ktor.server.plugins.contentnegotiation.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import net.toshimichi.angular.model.Customers
-import net.toshimichi.angular.route.createCustomerRoutes
-import net.toshimichi.angular.service.CustomerService
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.transactions.transaction

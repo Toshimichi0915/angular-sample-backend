@@ -1,11 +1,9 @@
-package net.toshimichi.angular.route
+package net.toshimichi.angular
 
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import net.toshimichi.angular.data.Customer
-import net.toshimichi.angular.service.CustomerService
 import org.koin.ktor.ext.inject
 
 fun Route.createCustomerRoutes() {
